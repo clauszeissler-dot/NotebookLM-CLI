@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/banner.png" alt="KI AffAIrs" width="100%">
+</p>
+
 # NotebookLM CLI
 
 **Deutsch** | [🇬🇧 English](README.en.md)
