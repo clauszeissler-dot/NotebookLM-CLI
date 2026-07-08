@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+*venv/
+
+# NotebookLM downloads / lokale Artefakte
+downloads/
+*.mp3
+*.mp4
+
+# Auth/State niemals committen
+storage_state.json
+.notebooklm/
+
+# OS
+.DS_Store
+Thumbs.db
