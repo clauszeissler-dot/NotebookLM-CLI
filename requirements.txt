@@ -1,0 +1,9 @@
+# NotebookLM CLI — Python-Abhängigkeiten / Python dependencies
+# Installation:  pip install -r requirements.txt
+#
+# notebooklm-py : die CLI, die NotebookLM steuert (entwickelt/getestet mit 0.6.x).
+#                 the CLI that drives NotebookLM (built/tested with 0.6.x).
+# playwright    : wird für den einmaligen Browser-Login benötigt.
+#                 needed for the one-time browser login.
+notebooklm-py>=0.6,<0.7
+playwright

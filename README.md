@@ -13,7 +13,7 @@ Das Repo besteht aus zwei schlanken Teilen rund um die CLI [`notebooklm-py`](htt
 - **[`SKILL.md`](SKILL.md)** — ein Skill für **Claude Code**, damit Claude die NotebookLM-Befehle autonom und regelkonform ausführt („Erstelle ein Notebook, lade diese URLs rein und mach einen Podcast daraus").
 - **[`USER-HANDBOOK.md`](USER-HANDBOOK.md)** — ein ausführliches, einsteigerfreundliches Handbuch mit allen Befehlen, Beispielen und Fehlerbehebung.
 
-> ⚠️ **Wichtig:** NotebookLM hat keine offizielle Consumer-API. `notebooklm-py` nutzt eine reverse-engineerte, undokumentierte Schnittstelle. Sie kann brechen, wenn Google etwas ändert, und die Automatisierung eines Kontos kann gegen Googles Nutzungsbedingungen verstoßen. Nutzung auf eigenes Risiko, idealerweise mit einem dedizierten Konto — keine geschäftskritischen oder sensiblen Inhalte.
+> ⚠️ **Wichtig — kein offizielles Google-Produkt:** Dies ist **nicht** von Google lizenziert und **nicht** mit Google verbunden. NotebookLM hat keine offizielle Consumer-API; `notebooklm-py` nutzt eine reverse-engineerte, undokumentierte Schnittstelle, die brechen kann, wenn Google etwas ändert. Die Automatisierung eines Kontos verstößt möglicherweise gegen Googles Nutzungsbedingungen und **kann zur Sperrung deines Google-Kontos führen**. Nutzung auf eigenes Risiko — am besten mit einem **dedizierten Zweitkonto**, niemals mit einem Konto, dessen Verlust wehtäte, und keine geschäftskritischen oder sensiblen Inhalte.
 
 ---
 
@@ -54,8 +54,8 @@ source notebooklm-venv/bin/activate
 #    Windows (PowerShell):
 notebooklm-venv\Scripts\Activate.ps1
 
-# 3) CLI + Playwright (für den Browser-Login) installieren
-pip install notebooklm-py playwright
+# 3) Abhängigkeiten installieren (CLI + Playwright für den Browser-Login)
+pip install -r requirements.txt
 ```
 
 ---

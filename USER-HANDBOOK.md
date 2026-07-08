@@ -10,7 +10,7 @@ Normalerweise machst du das alles per Hand in der NotebookLM-Webseite. Mit der `
 
 **Das funktioniert**, weil eine Open-Source-Community herausgefunden hat, wie NotebookLM intern kommuniziert, und daraus ein Werkzeug ([`notebooklm-py`](https://github.com/teng-lin/notebooklm-py)) gebaut hat, das diese Kommunikation nachahmt.
 
-> **Wichtig:** Das Ganze basiert auf inoffiziellen Schnittstellen. Google kann die jederzeit ändern. Dann funktioniert es kurzzeitig nicht, bis die Community das Werkzeug anpasst. Für den täglichen Gebrauch kein Problem — aber nicht für geschäftskritische Prozesse nutzen, die niemals ausfallen dürfen.
+> **Wichtig — kein offizielles Google-Produkt:** Dies ist **nicht** von Google lizenziert oder mit Google verbunden und basiert auf inoffiziellen Schnittstellen. Google kann die jederzeit ändern (dann funktioniert es kurzzeitig nicht, bis die Community nachzieht). Die Automatisierung eines Kontos verstößt möglicherweise gegen Googles Nutzungsbedingungen und **kann zur Sperrung deines Google-Kontos führen**. Nutze am besten ein **dediziertes Zweitkonto**, niemals dein Hauptkonto, keine geschäftskritischen oder sensiblen Inhalte — und nutze es nicht für Prozesse, die niemals ausfallen dürfen.
 
 ---
 
@@ -67,8 +67,8 @@ source notebooklm-venv/bin/activate
 # aktivieren — Windows (PowerShell):
 notebooklm-venv\Scripts\Activate.ps1
 
-# CLI + Playwright (für den Browser-Login) installieren
-pip install notebooklm-py playwright
+# Abhängigkeiten installieren (CLI + Playwright für den Browser-Login)
+pip install -r requirements.txt
 ```
 
 ### Schritt 2: Bei Google anmelden

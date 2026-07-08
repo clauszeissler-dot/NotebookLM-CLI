@@ -13,7 +13,7 @@ The repo is two thin pieces built around the [`notebooklm-py`](https://github.co
 - **[`SKILL.md`](SKILL.md)** — a skill for **Claude Code** so Claude runs the NotebookLM commands autonomously and safely ("Create a notebook, add these URLs, and turn them into a podcast").
 - **[`USER-HANDBOOK.md`](USER-HANDBOOK.md)** — a thorough, beginner-friendly manual with every command, examples and troubleshooting.
 
-> ⚠️ **Important:** NotebookLM has no official consumer API. `notebooklm-py` uses a reverse-engineered, undocumented interface. It can break when Google changes things, and automating an account may conflict with Google's Terms of Service. Use at your own risk, ideally with a dedicated account — no business-critical or sensitive content.
+> ⚠️ **Important — not an official Google product:** This is **not** licensed by or affiliated with Google. NotebookLM has no official consumer API; `notebooklm-py` uses a reverse-engineered, undocumented interface that can break when Google changes things. Automating an account may violate Google's Terms of Service and **can get your Google account suspended or banned**. Use at your own risk — ideally with a **dedicated secondary account**, never one you can't afford to lose, and no business-critical or sensitive content.
 
 ---
 
@@ -54,8 +54,8 @@ source notebooklm-venv/bin/activate
 #    Windows (PowerShell):
 notebooklm-venv\Scripts\Activate.ps1
 
-# 3) Install the CLI + Playwright (needed for the browser login)
-pip install notebooklm-py playwright
+# 3) Install dependencies (CLI + Playwright for the browser login)
+pip install -r requirements.txt
 ```
 
 ---
